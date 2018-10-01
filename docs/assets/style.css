@@ -50,11 +50,12 @@ body {
     height: 100px;
     width:100px;
     background: #000;
-    position: absoulute;
+    position: absolute;
     top: 4px;
     padding: 0 5px 5px;
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    z-index: 1;
 }
 
 .links .logo img {
@@ -90,6 +91,7 @@ body {
 #main-image {
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 
 .gallery {
@@ -142,6 +144,7 @@ body {
     border-radius: 5px;
     color: white;
     text-decoration: none;
+    margin: 5px 10px;
 }
 
 .gallery-img img {
