@@ -79,7 +79,8 @@ body {
 
 .main-image-header h1 {
     font-family: 'Monoton', cursive;
-    font-size: 7em;
+    font-size: inherit;
+    font-size: 5em;
 }
 
 .main-image-header p {
@@ -134,7 +135,6 @@ body {
 }
 
 .button {
-    width: 100%;
     display: block;
     padding: 10px;
     background: orange;
@@ -155,13 +155,13 @@ body {
 .footer {
     background-image: url("../assets/images/contacus.jpg");
     background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
+    background-size: cover;
 }
 
 .footer-top {
     display: grid;
     grid-template-columns: 50% 50%;
+    padding: 15px 20px;
 }
 
 .footer-top form * {
@@ -173,4 +173,17 @@ body {
     color: white;
     background-color: rgba(245, 245, 245, 0.335);
     border-radius: 6px;
+}
+
+.footer-bottom {
+    background: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    margin-top: 4px;
+    margin-left: 15px;
 }
