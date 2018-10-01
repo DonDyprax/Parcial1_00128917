@@ -1,4 +1,20 @@
 
+colores {
+color: #f5f5f5;
+color: #000000;
+color: #fff;
+color: orange;
+color: blue;
+color: #dbdada;
+color: #612e1d;
+color: #13131342;
+color: #440d5a;
+color: #fef6f4;
+color: rgba(245, 245, 245, 0.335);
+color: rgba(109, 104, 104, 0.801);
+}
+
+
 ::root {
     box-sizing: border-box;
 }
@@ -85,8 +101,15 @@ body {
 
 .gallery .gallery-item {
     width: 30%;
-    text-align: center;
     min-width: 300px;
+    border: 1px solid rgba(107,107,107,1);
+    -webkit-box-shadow: 5px 6px 12px -4px rgba(107,107,107,1);
+    -moz-box-shadow: 5px 6px 12px -4px rgba(107,107,107,1);
+    box-shadow: 5px 6px 12px -4px rgba(107,107,107,1);
+}
+
+.gallery .gallery-item h3{
+    color: #612e1d;
 }
 
 .gallery .gallery-item .gallery-img {
@@ -107,6 +130,7 @@ body {
 .gallery .gallery-item .gallery-desc {
     font-weight: 300;
     padding: 5px 10px;
+    color: black;
 }
 
 .gallery-img img {
@@ -115,6 +139,10 @@ body {
     height: 100%;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+}
+
+.footer {
+    background-image: url("../assets/images/contacus.jpg");
 }
 
 .footer-top {
@@ -128,4 +156,5 @@ body {
 
 .contact-us {
     color: white;
+    background-color: rgba(109, 104, 104, 0.801);
 }
