@@ -133,6 +133,17 @@ body {
     color: black;
 }
 
+.button {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    background: orange;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
 .gallery-img img {
     display: block;
     width: 100%;
@@ -143,6 +154,9 @@ body {
 
 .footer {
     background-image: url("../assets/images/contacus.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
 }
 
 .footer-top {
@@ -152,9 +166,11 @@ body {
 
 .footer-top form * {
     display: block;
+    color: white;
 }
 
 .contact-us {
     color: white;
-    background-color: rgba(109, 104, 104, 0.801);
+    background-color: rgba(245, 245, 245, 0.335);
+    border-radius: 6px;
 }
