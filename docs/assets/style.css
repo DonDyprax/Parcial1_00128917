@@ -1,0 +1,131 @@
+
+::root {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    margin: 0; padding: 0; box-sizing: inherit;
+}
+
+.navbar {
+    width: 100%; height: 56px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    background-color: #000;
+    position: relative;
+    height: 100%;
+}
+
+.links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links .logo {
+    height: 100px;
+    width:100px;
+    background: #000;
+    position: absoulute;
+    top: 4px;
+    padding: 0 5px 5px;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+}
+
+.links .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.main-image-container {
+    position: relative;
+}
+
+.main-image-header {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.main-image-header h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 7em;
+}
+
+.main-image-header p {
+    font-family: 'Raleway', sans-serif;
+}
+
+#main-image {
+    width: 100%;
+    height: auto;
+}
+
+.gallery {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.gallery .gallery-item {
+    width: 30%;
+    text-align: center;
+    min-width: 300px;
+}
+
+.gallery .gallery-item .gallery-img {
+    width: 100%;
+    height: 15rem;
+}
+
+.gallery .gallery-item {
+    display: block;
+    margin: 2em 1em;
+    background-color: white;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.gallery .gallery-item .gallery-desc {
+    font-weight: 300;
+    padding: 5px 10px;
+}
+
+.gallery-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.footer-top form * {
+    display: block;
+}
+
+.contact-us {
+    color: white;
+}
